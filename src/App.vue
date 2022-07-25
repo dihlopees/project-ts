@@ -1,30 +1,37 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="nav">
+    <router-link to="/">Home</router-link>
+    <router-link :to="{name: 'Shope'}">Loja</router-link>
+    <router-link :to="{name: 'Cadastro'}">Cadastro de Produto</router-link>
+   
+  </div>
+  <router-view />
 </template>
 
+<script lang="ts">
+export default {
+  name: "App",
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.nav a {
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid crimson;
+  padding: 10px;
+  background-color: crimson;
+  width: 150px;
+  margin: 20px;
+}
+.nav {
+  padding: 45px;
+ 
+  
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 </style>
