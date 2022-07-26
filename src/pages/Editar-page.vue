@@ -46,7 +46,7 @@
   </template>
   
   <script lang="ts">
-  import api from "../api.ts";
+  import api from "../api";
   
   export default {
     name: "Editar-page",

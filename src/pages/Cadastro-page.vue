@@ -46,9 +46,10 @@
   </template>
   
   <script lang="ts">
-  import api from "../api.ts";
+  import api from "../api"
+  import {defineComponent} from 'vue' 
   
-  export default {
+  export default defineComponent({
     name: "Cadastro-page",
   
     data() {
@@ -104,7 +105,7 @@
         this.transFileparaBase(event.target.files[0]);
       },
     },
-  };
+  });
   </script>
   
   <style>

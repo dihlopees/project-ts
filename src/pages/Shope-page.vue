@@ -63,7 +63,7 @@
       },
     },
     computed: {
-      conv(numero) {
+      conv(numero:number) {
         return numero.parseFloat("pt-br", {
           style: "currency",
           currency: "BRL",
